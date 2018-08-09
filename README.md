@@ -1,7 +1,7 @@
 ## Simple landing page (in progress)
 static (RWD coming soon)
 
-www.onet.pl
+https://monavik.github.io/simple-landing-page/
 
 ### Techno:
 * HTML5
