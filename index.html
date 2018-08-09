@@ -9,20 +9,91 @@
   </head>
   <body>
     <header>
-      <nav>
-      </nav>
+      <div class="">         
+          <nav class="">
+            <div class="logo">
+              <h3>Mona's</h3>
+            </div>
+            <div class="navbar">
+              <ul>
+                <li>Story</li> 
+                  <li><a href="#inspirations">Inspirations</a></li>
+                <li>Tips</li>
+                <li>Contact</li>     
+              </ul>    
+            </div>
+          </nav>
+        </div> <!--container-->
           <div class="hero-title">
-            <div class="monas">
+            <div class="monas-gardens">
               <p>Mona's</p>
               <p>Gardens</p>
             </div>
           </div> 
     </header>
-    
+    <section class="story">
+      <div class="story-txt container">
+        <p>Lorem ipsum dolor sit amet, ei per viderer nominavi, ius ne ignota populo. Sit ut cibo latine. Cibo tollit vis cu, soluta molestie nec et. Elit putent fabellas ut pri. In ius eius vitae quando, vivendo volutpat vel id.</p>
+
+        <p>Ius discere dolores te. Harum appetere disputando te qui, eu graeci ancillae disputando vim, ei cibo officiis scripserit qui. Ei quas sanctus comprehensam quo, epicurei periculis te nec. An viris saperet vim. Ne verterem pericula vim.</p>
+
+        <p>Est no decore soleat. Fabellas neglegentur no vel, at mentitum definiebas mei, ponderum accommodare an eos. Epicuri cotidieque vituperatoribus id eum, ne vix possim tritani mentitum. Nemore theophrastus pri ex, ei ignota erroribus accusamus usu. Eu lorem scripta vel. Mei eu habeo apeirian.</p>
+
+        <p>Illud iusto ne sea, euismod molestie vim ex. Quo nibh verterem accusamus cu. Ne sensibus contentiones definitionem ius, cu civibus deserunt democritum mea. Ex epicuri adipiscing vix. Vix an utroque erroribus forensibus, graeco timeam sententiae at eam.</p>
+
+        <p>Nec ferri debitis menandri et, ex mei eros consulatu. Vim ea quis meliore, id audire pertinacia vel. At accusam accusamus deseruisse cum. Est dicat oblique vivendo ad.</p>
+      </div>
+    </section>
+    <section class="inspirations container" id="inspirations">
+
+          <button class="tablink" onclick="openPage('Home', this, 'red')">English Gardens</button>
+          <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Mediterranean</button>
+          <button class="tablink" onclick="openPage('Contact', this, 'blue')">Far & Middle East</button>
+          <button class="tablink" onclick="openPage('About', this, 'orange')">Nature & Nordic</button>
+
+          <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            <p>Duis non congue mi. Phasellus at pharetra dolor, ut interdum lacus. Cras at erat sit amet augue mollis pulvinar at et risus. Suspendisse sed urna aliquet, rhoncus ligula eu, aliquam massa. Phasellus varius, neque ac ullamcorper gravida, purus mi blandit magna, ut facilisis massa diam et leo. Proin at metus lacinia, rhoncus ipsum at, blandit quam. Aliquam vitae justo at turpis scelerisque feugiat. Etiam at urna mattis, feugiat metus sagittis, accumsan elit. Phasellus massa orci, luctus vitae lorem ut, efficitur elementum arcu. Duis dapibus ut quam a hendrerit. Vivamus id justo at nunc finibus tempus vitae vitae neque.</p>
+
+            <p>Integer pellentesque lectus nec ligula feugiat elementum. Sed justo tortor, mattis vel arcu quis, placerat pellentesque purus. Phasellus tempus eros in facilisis pellentesque. Suspendisse pellentesque at eros nec efficitur. Donec vitae sapien at lectus placerat semper nec id justo. Vivamus pretium metus a nisi condimentum lacinia. Suspendisse imperdiet tellus facilisis mi dapibus, vitae consequat nulla commodo. Vestibulum cursus odio id urna varius ultrices. Praesent aliquam enim libero. Fusce facilisis lobortis dolor, vitae elementum quam vestibulum et. Sed elementum bibendum nulla imperdiet egestas. Donec faucibus sem orci, sit amet accumsan mauris cursus vitae. Maecenas blandit rutrum magna, elementum rutrum ligula interdum a. Nulla feugiat ut orci ut mattis. Mauris nec eleifend justo, ac eleifend purus.</p>
+          </div>
+
+          <div id="News" class="tabcontent">
+            <h3>News</h3>
+            <p>Duis non congue mi. Phasellus at pharetra dolor, ut interdum lacus. Cras at erat sit amet augue mollis pulvinar at et risus. Suspendisse sed urna aliquet, rhoncus ligula eu, aliquam massa. Phasellus varius, neque ac ullamcorper gravida, purus mi blandit magna, ut facilisis massa diam et leo. Proin at metus lacinia, rhoncus ipsum at, blandit quam. Aliquam vitae justo at turpis scelerisque feugiat. Etiam at urna mattis, feugiat metus sagittis, accumsan elit. Phasellus massa orci, luctus vitae lorem ut, efficitur elementum arcu. Duis dapibus ut quam a hendrerit. Vivamus id justo at nunc finibus tempus vitae vitae neque.</p>
+
+            <p>Integer pellentesque lectus nec ligula feugiat elementum. Sed justo tortor, mattis vel arcu quis, placerat pellentesque purus. Phasellus tempus eros in facilisis pellentesque. Suspendisse pellentesque at eros nec efficitur. Donec vitae sapien at lectus placerat semper nec id justo. Vivamus pretium metus a nisi condimentum lacinia. Suspendisse imperdiet tellus facilisis mi dapibus, vitae consequat nulla commodo. Vestibulum cursus odio id urna varius ultrices. Praesent aliquam enim libero. Fusce facilisis lobortis dolor, vitae elementum quam vestibulum et. Sed elementum bibendum nulla imperdiet egestas. Donec faucibus sem orci, sit amet accumsan mauris cursus vitae. Maecenas blandit rutrum magna, elementum rutrum ligula interdum a. Nulla feugiat ut orci ut mattis. Mauris nec eleifend justo, ac eleifend purus.</p> 
+          </div>
+
+          <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Duis non congue mi. Phasellus at pharetra dolor, ut interdum lacus. Cras at erat sit amet augue mollis pulvinar at et risus. Suspendisse sed urna aliquet, rhoncus ligula eu, aliquam massa. Phasellus varius, neque ac ullamcorper gravida, purus mi blandit magna, ut facilisis massa diam et leo. Proin at metus lacinia, rhoncus ipsum at, blandit quam. Aliquam vitae justo at turpis scelerisque feugiat. Etiam at urna mattis, feugiat metus sagittis, accumsan elit. Phasellus massa orci, luctus vitae lorem ut, efficitur elementum arcu. Duis dapibus ut quam a hendrerit. Vivamus id justo at nunc finibus tempus vitae vitae neque.</p>
+
+            <p>Integer pellentesque lectus nec ligula feugiat elementum. Sed justo tortor, mattis vel arcu quis, placerat pellentesque purus. Phasellus tempus eros in facilisis pellentesque. Suspendisse pellentesque at eros nec efficitur. Donec vitae sapien at lectus placerat semper nec id justo. Vivamus pretium metus a nisi condimentum lacinia. Suspendisse imperdiet tellus facilisis mi dapibus, vitae consequat nulla commodo. Vestibulum cursus odio id urna varius ultrices. Praesent aliquam enim libero. Fusce facilisis lobortis dolor, vitae elementum quam vestibulum et. Sed elementum bibendum nulla imperdiet egestas. Donec faucibus sem orci, sit amet accumsan mauris cursus vitae. Maecenas blandit rutrum magna, elementum rutrum ligula interdum a. Nulla feugiat ut orci ut mattis. Mauris nec eleifend justo, ac eleifend purus.</p>
+          </div>
+
+          <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Duis non congue mi. Phasellus at pharetra dolor, ut interdum lacus. Cras at erat sit amet augue mollis pulvinar at et risus. Suspendisse sed urna aliquet, rhoncus ligula eu, aliquam massa. Phasellus varius, neque ac ullamcorper gravida, purus mi blandit magna, ut facilisis massa diam et leo. Proin at metus lacinia, rhoncus ipsum at, blandit quam. Aliquam vitae justo at turpis scelerisque feugiat. Etiam at urna mattis, feugiat metus sagittis, accumsan elit. Phasellus massa orci, luctus vitae lorem ut, efficitur elementum arcu. Duis dapibus ut quam a hendrerit. Vivamus id justo at nunc finibus tempus vitae vitae neque.</p>
+
+            <p>Integer pellentesque lectus nec ligula feugiat elementum. Sed justo tortor, mattis vel arcu quis, placerat pellentesque purus. Phasellus tempus eros in facilisis pellentesque. Suspendisse pellentesque at eros nec efficitur. Donec vitae sapien at lectus placerat semper nec id justo. Vivamus pretium metus a nisi condimentum lacinia. Suspendisse imperdiet tellus facilisis mi dapibus, vitae consequat nulla commodo. Vestibulum cursus odio id urna varius ultrices. Praesent aliquam enim libero. Fusce facilisis lobortis dolor, vitae elementum quam vestibulum et. Sed elementum bibendum nulla imperdiet egestas. Donec faucibus sem orci, sit amet accumsan mauris cursus vitae. Maecenas blandit rutrum magna, elementum rutrum ligula interdum a. Nulla feugiat ut orci ut mattis. Mauris nec eleifend justo, ac eleifend purus.</p>
+          </div>
+    </section>
+    <section class="tips">
+      <div class="daily-tip">
+        <p>Every day new tip for your garden, body and mind</p>
+      </div>
+    </section>
+    <section class="">
+        
+    </section>
     <footer>
-        <p><a href="https://github.com/Monavik/" target="_blank">Github</a> | <a href="">Pinterest</a> | <a href="">Twitter</a></p>
-        <p>&copy; Monavik 2018</p>
+      <div class="contact">
+        <p><a href="https://github.com/Monavik/" target="_blank">Github</a> | <a href="https://pl.pinterest.com/edmundsdottir/" target="_blank">Pinterest</a> | <a href="">Twitter</a></p>
+        <p>by &copy; Monavik 2018</p>
+      </div>    
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
     
