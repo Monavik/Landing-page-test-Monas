@@ -19,7 +19,7 @@ nav {
   border-top: 8px double;
   border-bottom: 8px double;
   box-shadow: 0 0 170px 10px #383c33;
-  height: 80px;
+  height: 60px;
   width: 100%;
   margin-top: 30px;
   position: absolute;
@@ -39,10 +39,12 @@ nav {
     display: inline-block;
     transition: 0.5s; }
     .navbar ul li:hover {
-      color: #fff;
       cursor: pointer; }
   .navbar ul li a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #000; }
+    .navbar ul li a:hover {
+      color: #da8285; }
 
 /* HERO */
 header {
@@ -55,7 +57,7 @@ header {
 .hero-title {
   width: 900px;
   height: 400px;
-  border: 8px double;
+  border: 8px double #000;
   margin-top: 50px;
   box-shadow: 0 35px 185px 15px #383c33;
   font-family: "Cinzel", serif;
@@ -65,7 +67,12 @@ header {
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 80px;
-  background: rgba(255, 255, 255, 0.4); }
+  background: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.5s ease-in-out; }
+  .hero-title:hover {
+    cursor: pointer;
+    color: #000;
+    background: rgba(255, 255, 255, 0.6); }
 
 .monas-gardens {
   position: absolute;
@@ -73,31 +80,43 @@ header {
   left: 50%;
   transform: translate(-50%, -50%); }
   .monas-gardens p {
-    margin: 0 auto; }
+    margin: 0 auto;
+    color: #000; }
 
 /* STORY */
+.story {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative; }
+
 .story-txt {
-  margin: 70px auto;
-  text-transform: capitalize; }
+  margin: 0 auto;
+  text-transform: capitalize;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
   .story-txt p {
-    font-family: "Amatic SC";
-    font-size: 30px; }
+    font-family: "Cinzel", serif;
+    font-size: 20px; }
 
 /* INSPIRATIONS */
 .inspirations {
   height: 100vh;
-  box-shadow: 0 0 170px 10px #383c33; }
+  box-shadow: 0 0 170px 10px #383c33;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 26px; }
 
 .tablink {
   background-color: #fff;
-  color: #000;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 17px;
-  width: 25%; }
+  font-size: 25px;
+  width: 25%;
+  font-family: "Amatic SC", sans-serif; }
 
 .tablink:hover {
   background-color: #777; }
@@ -128,10 +147,33 @@ header {
   background-size: cover;
   background-position: center; }
 
+/* FEATURES */
+.features {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; }
+  .features div {
+    width: 15%;
+    height: 150px;
+    text-align: center;
+    padding: 0 15px; }
+    .features div p {
+      font-size: 0.8em;
+      font-weight: bold; }
+    .features div .fab {
+      font-size: 4em;
+      color: #da8285; }
+
 /* TIPS */
 .tips {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://images.unsplash.com/photo-1514092379092-21dfee9d0b93?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0aeb724a6df93ccc8a3d87e02462d9a9&auto=format&fit=crop&w=752&q=80);
+  background-position: center bottom;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -139,15 +181,43 @@ header {
 .daily-tip {
   margin: 70px auto; }
   .daily-tip p {
-    font-size: 20px;
+    font-size: 30px;
     margin: 0 auto; }
 
 /* CONTACT */
+.contact {
+  height: 60vh;
+  width: 100%; }
+
 /* FOOTER */
-footer {
-  background: url(https://images.unsplash.com/photo-1514092379092-21dfee9d0b93?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0aeb724a6df93ccc8a3d87e02462d9a9&auto=format&fit=crop&w=752&q=80);
-  background-position: center;
+.footer {
+  height: 10vh;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://images.unsplash.com/photo-1514092379092-21dfee9d0b93?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0aeb724a6df93ccc8a3d87e02462d9a9&auto=format&fit=crop&w=752&q=80);
+  background-position: center bottom;
   background-size: cover;
-  height: 30vh; }
+  position: relative; }
+
+.base {
+  height: 8vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .base .fab {
+    height: 50px;
+    width: 50px;
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    padding: 0;
+    margin-top: 1px; }
+
+.copyright p {
+  font-size: 1.2em; }
 
 /*# sourceMappingURL=style.css.map */

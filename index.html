@@ -5,33 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mona's gardens</title>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Cinzel:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-    <header>
-      <div class="">         
-          <nav class="">
+    <header>      
+          <nav>
             <div class="logo">
               <h3>Mona's</h3>
             </div>
             <div class="navbar">
               <ul>
-                <li>Story</li> 
-                  <li><a href="#inspirations">Inspirations</a></li>
-                <li>Tips</li>
-                <li>Contact</li>     
+                <li><a href="#story">Story</a></li> 
+                <li><a href="#inspirations">Inspirations</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#footer">Contact</a></li>     
               </ul>    
             </div>
           </nav>
-        </div> <!--container-->
-          <div class="hero-title">
-            <div class="monas-gardens">
-              <p>Mona's</p>
-              <p>Gardens</p>
-            </div>
-          </div> 
+           <a href="#story">
+              <div class="hero-title">
+                  <div class="monas-gardens">
+                    <p>Mona's</p>
+                    <p>Gardens</p>
+                  </div>
+              </div> 
+          </a>
     </header>
-    <section class="story">
+    <section class="story" id="story">
       <div class="story-txt container">
         <p>Lorem ipsum dolor sit amet, ei per viderer nominavi, ius ne ignota populo. Sit ut cibo latine. Cibo tollit vis cu, soluta molestie nec et. Elit putent fabellas ut pri. In ius eius vitae quando, vivendo volutpat vel id.</p>
 
@@ -45,10 +47,9 @@
       </div>
     </section>
     <section class="inspirations container" id="inspirations">
-
-          <button class="tablink" onclick="openPage('Home', this, 'red')">English Gardens</button>
+          <button class="tablink" onclick="openPage('Home', this, 'red')">England</button>
           <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Mediterranean</button>
-          <button class="tablink" onclick="openPage('Contact', this, 'blue')">Far & Middle East</button>
+          <button class="tablink" onclick="openPage('third', this, 'blue')">Far & Middle East</button>
           <button class="tablink" onclick="openPage('About', this, 'orange')">Nature & Nordic</button>
 
           <div id="Home" class="tabcontent">
@@ -65,7 +66,7 @@
             <p>Integer pellentesque lectus nec ligula feugiat elementum. Sed justo tortor, mattis vel arcu quis, placerat pellentesque purus. Phasellus tempus eros in facilisis pellentesque. Suspendisse pellentesque at eros nec efficitur. Donec vitae sapien at lectus placerat semper nec id justo. Vivamus pretium metus a nisi condimentum lacinia. Suspendisse imperdiet tellus facilisis mi dapibus, vitae consequat nulla commodo. Vestibulum cursus odio id urna varius ultrices. Praesent aliquam enim libero. Fusce facilisis lobortis dolor, vitae elementum quam vestibulum et. Sed elementum bibendum nulla imperdiet egestas. Donec faucibus sem orci, sit amet accumsan mauris cursus vitae. Maecenas blandit rutrum magna, elementum rutrum ligula interdum a. Nulla feugiat ut orci ut mattis. Mauris nec eleifend justo, ac eleifend purus.</p> 
           </div>
 
-          <div id="Contact" class="tabcontent">
+          <div id="third" class="tabcontent">
             <h3>Contact</h3>
             <p>Duis non congue mi. Phasellus at pharetra dolor, ut interdum lacus. Cras at erat sit amet augue mollis pulvinar at et risus. Suspendisse sed urna aliquet, rhoncus ligula eu, aliquam massa. Phasellus varius, neque ac ullamcorper gravida, purus mi blandit magna, ut facilisis massa diam et leo. Proin at metus lacinia, rhoncus ipsum at, blandit quam. Aliquam vitae justo at turpis scelerisque feugiat. Etiam at urna mattis, feugiat metus sagittis, accumsan elit. Phasellus massa orci, luctus vitae lorem ut, efficitur elementum arcu. Duis dapibus ut quam a hendrerit. Vivamus id justo at nunc finibus tempus vitae vitae neque.</p>
 
@@ -79,18 +80,46 @@
             <p>Integer pellentesque lectus nec ligula feugiat elementum. Sed justo tortor, mattis vel arcu quis, placerat pellentesque purus. Phasellus tempus eros in facilisis pellentesque. Suspendisse pellentesque at eros nec efficitur. Donec vitae sapien at lectus placerat semper nec id justo. Vivamus pretium metus a nisi condimentum lacinia. Suspendisse imperdiet tellus facilisis mi dapibus, vitae consequat nulla commodo. Vestibulum cursus odio id urna varius ultrices. Praesent aliquam enim libero. Fusce facilisis lobortis dolor, vitae elementum quam vestibulum et. Sed elementum bibendum nulla imperdiet egestas. Donec faucibus sem orci, sit amet accumsan mauris cursus vitae. Maecenas blandit rutrum magna, elementum rutrum ligula interdum a. Nulla feugiat ut orci ut mattis. Mauris nec eleifend justo, ac eleifend purus.</p>
           </div>
     </section>
-    <section class="tips">
-      <div class="daily-tip">
+    <section class="features container">
+      <div>
+        <i class="fab fa-css3-alt"></i>
+          <p>Nunc tempor posuere, nibh ac nisl. Aenean ac dolor. Pellentesque sed eros. Quisque urna. Nullam sit amet ipsum ut arcu. Sed ornare, orci luctus.</p>  
+      </div>
+      <div>
+        <i class="fab fa-js-square"></i>
+        <p>Aenean ac dolor. Pellentesque sed eros. Quisque urna. Nullam sit amet ipsum ut arcu. Sed ornare, orci luctus.</p>
+      </div>
+      <div>
+        <i class="fab fa-html5"></i>
+        <p>Lorem ipsum dolor sit amet ipsum. Nunc tempor posuere, nibh ac nisl. Aenean ac dolor. Pellentesque sed eros. Quisque urna.</p>
+      </div>
+      <div>
+        <i class="fab fa-sass"></i>
+        <p>Lorem ipsum dolor sit amet ipsum. Nunc tempor posuere, nibh ac nisl. Aenean ac dolor. Pellentesque sed eros.</p>  
+      </div>
+      <div>
+        <i class="fab fa-git"></i>
+        <p> Nunc tempor posuere, nibh ac nisl. Aenean ac dolor. Pellentesque sed eros.</p> 
+      </div>
+    </section>
+    <section class="tips" id="tips">
+        <div class="daily-tip">
         <p>Every day new tip for your garden, body and mind</p>
       </div>
     </section>
-    <section class="">
+    <section class="contact">
         
     </section>
-    <footer>
-      <div class="contact">
-        <p><a href="https://github.com/Monavik/" target="_blank">Github</a> | <a href="https://pl.pinterest.com/edmundsdottir/" target="_blank">Pinterest</a> | <a href="">Twitter</a></p>
-        <p>by &copy; Monavik 2018</p>
+    <footer id="footer" class="footer">
+      <div class="base container">
+        <div class="icons">
+            <a href="https://github.com/Monavik/" target="_blank"><i class="fab fa-github"></i></a> 
+            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://twitter.com/SpaceX" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="copyright">
+          <p> &copy; Monavik 2018</p>  
+        </div>
       </div>    
     </footer>
     <script src="script.js"></script>
