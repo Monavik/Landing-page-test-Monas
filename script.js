@@ -59,7 +59,7 @@ function initMap() {
   var svalbard = {lat: 78.131, lng: 15.385};
   // The map, centered at Uluru
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 7, center: svalbard});
+      document.getElementById('map'), {zoom: 8, center: svalbard});
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: svalbard, map: map});
 }
