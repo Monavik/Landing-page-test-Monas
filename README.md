@@ -1,5 +1,5 @@
 ## Simple landing page (in progress)
-static (RWD coming soon)
+RWD to come
 
 https://monavik.github.io/simple-landing-page/
 
