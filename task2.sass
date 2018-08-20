@@ -10,9 +10,26 @@ body
 .container
   width: 1200px
   margin: 0 auto
-  
-$local-red: #da8285
 
+$local-red: #da8285  
+
+.btn 
+  height: 60px
+  width: 150px
+  margin: 50px auto
+  border: 2px solid gray
+  border-radius: 22px
+  background-color: $local-red
+  line-height: 20px
+  color: #fff
+  line-height: 1em
+  box-shadow: 0 5px 20px black
+  &:hover
+    cursor: pointer
+  &:active
+    box-shadow: 0 2px black
+  p
+    text-align: center
 
 /* NAVBAR */
 
@@ -22,12 +39,11 @@ nav
   justify-content: center
   border-top: 8px double
   border-bottom: 8px double
-  box-shadow: 0 0 170px 10px #383c33
   height: 60px
   width: 100%
   margin-top: 30px
   position: absolute
-  background: rgba(255, 255, 255, 0.4)
+  background: rgba(255, 255, 255, 0.7)
   
 .logo 
   margin-left: -300px
@@ -67,7 +83,7 @@ header
   height: 400px
   border: 8px double #000
   margin-top: 50px 
-  box-shadow: 0 35px 185px 15px #383c33 
+  box-shadow: 0 35px 105px 15px #383c33 
   font-family: 'Cinzel', serif
   position: absolute
   top: 50%
@@ -75,12 +91,11 @@ header
   transform: translate(-50%, -50%)
   text-align: center
   font-size: 80px
-  background: rgba(255, 255, 255, 0.4)
-  transition: background-color .5s ease-in-out
+  background: rgba(255, 255, 255, 0.6)
   &:hover
-    cursor: pointer
-    color: #000
-    background: rgba(155, 155, 155, 0.2)
+    cursor: pointer  
+  &:active
+    box-shadow: 0 35px 85px 5px #000
     
  
 .monas-gardens
@@ -119,44 +134,38 @@ header
 .inspirations
   height: 100vh
   box-shadow: 0 0 170px 10px #383c33
-  font-family: 'Amatic SC', sans-serif
-  font-size: 26px
 
 .tablink 
   background-color: #fff
   float: left
-  border: none
   outline: none
   cursor: pointer
   padding: 14px 16px
-  font-size: 25px
+  font-size: 22px
   width: 25%
-  font-family: 'Amatic SC', sans-serif
+  font-family: Cinzel, serif
+  button 
+    border: 1px solid black
 
-.tablink:hover 
-  background-color: #777
-
-
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent 
   color: #fff
-  display: none
   padding: 100px 20px
   height: 100%
-
+  font-family: Georgia, serif
+  font-size: 22px
+  text-align: justify
 
 #Home
   background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/PFFTZ8OGXV.jpg)
   background-repeat: no-repeat
   background-size: cover
   
-
 #News
-  background-image: url(https://images.unsplash.com/photo-1521193687375-29fee60b820e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dde47dc5aef8fbe0cdb0ec1d4f5b610a&auto=format&fit=crop&w=400&q=80)
+  background-image: url(https://images.unsplash.com/photo-1516619372219-1bf6ebdce4a0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ba20d2f3e68f223ed673203cff1c6f87&auto=format&fit=crop&w=751&q=80)
   background-size: cover
   background-position: center
 
-#Contact
+#Third
   background-image: url(https://images.pexels.com/photos/302100/pexels-photo-302100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
   background-size: cover
 
@@ -198,25 +207,43 @@ header
   background-position: center bottom
   background-size: cover
   display: flex
-  justify-content: center
+  flex-direction: column
   align-items: center
+  justify-content: center
 
 .daily-tip 
-  margin: 70px auto
-  p
-    font-size: 30px
-    margin: 0 auto
+  p  
+    font-size: 40px
+    padding: 50px auto
+
+    
 
 
+.tips-btn
+  &:active
+    visibility: none
 
 /* CONTACT */
 .contact
   height: 60vh
   width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
 
+#map
+  height: 300px
+  width: 500px
+
+.form
+  height: 300px
+  width: 500px
+  background-color: blue
+  margin: 0 30px
 
 
 /* FOOTER */
+
 .footer 
   height: 10vh
   width: 100%
@@ -237,14 +264,14 @@ header
   .fab
     height: 50px
     width: 50px
-    color: #000
     line-height: 50px
     text-align: center
     font-size: 25px
     padding: 0
     margin-top: 1px
+    color: $local-red
 
 .copyright p
   font-size: 1.2em
-
+  
   

@@ -23,6 +23,8 @@ function openPage(pageName, elmnt, color) {
 document.getElementById("defaultOpen").click();
 
 
+/* SMOOTH SCROLLING */
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -47,3 +49,17 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+/* MAP */
+
+// Initialize and add the map
+function initMap() {
+  // The location of Svalbard
+  var svalbard = {lat: 78.131, lng: 15.385};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 7, center: svalbard});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: svalbard, map: map});
+}

@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=
+                             AIzaSyBdIVltzm6h0Zfeq0Q8zHaQTVWct5jmX3U&callback=initMap"></script>
+      <script type="text/javascript"></script>
   </head>
   <body>
     <header>      
           <nav>
             <div class="logo">
-              <h3>Mona's</h3>
+              <h3>Noa's</h3>
             </div>
             <div class="navbar">
               <ul>
@@ -27,7 +31,7 @@
            <a href="#story">
               <div class="hero-title">
                   <div class="monas-gardens">
-                    <p>Mona's</p>
+                    <p>Noa's</p>
                     <p>Gardens</p>
                   </div>
               </div> 
@@ -44,43 +48,50 @@
         <p>Illud iusto ne sea, euismod molestie vim ex. Quo nibh verterem accusamus cu. Ne sensibus contentiones definitionem ius, cu civibus deserunt democritum mea. Ex epicuri adipiscing vix. Vix an utroque erroribus forensibus, graeco timeam sententiae at eam.</p>
 
         <p>Nec ferri debitis menandri et, ex mei eros consulatu. Vim ea quis meliore, id audire pertinacia vel. At accusam accusamus deseruisse cum. Est dicat oblique vivendo ad.</p>
+        <a href="#inspirations">
+           <div class="btn">
+            <p>More</p>
+           </div>
+        </a>
       </div>
     </section>
     <section class="inspirations container" id="inspirations">
-          <button class="tablink" onclick="openPage('Home', this, 'red')">England</button>
-          <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Mediterranean</button>
-          <button class="tablink" onclick="openPage('third', this, 'blue')">Far & Middle East</button>
-          <button class="tablink" onclick="openPage('About', this, 'orange')">Nature & Nordic</button>
+          <button class="tablink" onclick="openPage('Home', this, '#9BAB62')">England</button>
+          <button class="tablink" onclick="openPage('News', this, '#3698B4')" id="defaultOpen">Mediterranean</button>
+          <button class="tablink" onclick="openPage('Third', this, '#0B6224')">Far & Middle East</button>
+          <button class="tablink" onclick="openPage('About', this, '#B0B0B0')">Nature & Nordic</button>
 
           <div id="Home" class="tabcontent">
-            <h3>Home</h3>
+            <h3>Headline</h3>
             <p>Duis non congue mi. Phasellus at pharetra dolor, ut interdum lacus. Cras at erat sit amet augue mollis pulvinar at et risus. Suspendisse sed urna aliquet, rhoncus ligula eu, aliquam massa. Phasellus varius, neque ac ullamcorper gravida, purus mi blandit magna, ut facilisis massa diam et leo. Proin at metus lacinia, rhoncus ipsum at, blandit quam. Aliquam vitae justo at turpis scelerisque feugiat. Etiam at urna mattis, feugiat metus sagittis, accumsan elit. Phasellus massa orci, luctus vitae lorem ut, efficitur elementum arcu. Duis dapibus ut quam a hendrerit. Vivamus id justo at nunc finibus tempus vitae vitae neque.</p>
-
             <p>Integer pellentesque lectus nec ligula feugiat elementum. Sed justo tortor, mattis vel arcu quis, placerat pellentesque purus. Phasellus tempus eros in facilisis pellentesque. Suspendisse pellentesque at eros nec efficitur. Donec vitae sapien at lectus placerat semper nec id justo. Vivamus pretium metus a nisi condimentum lacinia. Suspendisse imperdiet tellus facilisis mi dapibus, vitae consequat nulla commodo. Vestibulum cursus odio id urna varius ultrices. Praesent aliquam enim libero. Fusce facilisis lobortis dolor, vitae elementum quam vestibulum et. Sed elementum bibendum nulla imperdiet egestas. Donec faucibus sem orci, sit amet accumsan mauris cursus vitae. Maecenas blandit rutrum magna, elementum rutrum ligula interdum a. Nulla feugiat ut orci ut mattis. Mauris nec eleifend justo, ac eleifend purus.</p>
           </div>
 
           <div id="News" class="tabcontent">
-            <h3>News</h3>
+            <h3>Headline</h3>
             <p>Duis non congue mi. Phasellus at pharetra dolor, ut interdum lacus. Cras at erat sit amet augue mollis pulvinar at et risus. Suspendisse sed urna aliquet, rhoncus ligula eu, aliquam massa. Phasellus varius, neque ac ullamcorper gravida, purus mi blandit magna, ut facilisis massa diam et leo. Proin at metus lacinia, rhoncus ipsum at, blandit quam. Aliquam vitae justo at turpis scelerisque feugiat. Etiam at urna mattis, feugiat metus sagittis, accumsan elit. Phasellus massa orci, luctus vitae lorem ut, efficitur elementum arcu. Duis dapibus ut quam a hendrerit. Vivamus id justo at nunc finibus tempus vitae vitae neque.</p>
 
             <p>Integer pellentesque lectus nec ligula feugiat elementum. Sed justo tortor, mattis vel arcu quis, placerat pellentesque purus. Phasellus tempus eros in facilisis pellentesque. Suspendisse pellentesque at eros nec efficitur. Donec vitae sapien at lectus placerat semper nec id justo. Vivamus pretium metus a nisi condimentum lacinia. Suspendisse imperdiet tellus facilisis mi dapibus, vitae consequat nulla commodo. Vestibulum cursus odio id urna varius ultrices. Praesent aliquam enim libero. Fusce facilisis lobortis dolor, vitae elementum quam vestibulum et. Sed elementum bibendum nulla imperdiet egestas. Donec faucibus sem orci, sit amet accumsan mauris cursus vitae. Maecenas blandit rutrum magna, elementum rutrum ligula interdum a. Nulla feugiat ut orci ut mattis. Mauris nec eleifend justo, ac eleifend purus.</p> 
           </div>
-
-          <div id="third" class="tabcontent">
-            <h3>Contact</h3>
+          <div id="Third" class="tabcontent">
+            <h3>Headline</h3>
             <p>Duis non congue mi. Phasellus at pharetra dolor, ut interdum lacus. Cras at erat sit amet augue mollis pulvinar at et risus. Suspendisse sed urna aliquet, rhoncus ligula eu, aliquam massa. Phasellus varius, neque ac ullamcorper gravida, purus mi blandit magna, ut facilisis massa diam et leo. Proin at metus lacinia, rhoncus ipsum at, blandit quam. Aliquam vitae justo at turpis scelerisque feugiat. Etiam at urna mattis, feugiat metus sagittis, accumsan elit. Phasellus massa orci, luctus vitae lorem ut, efficitur elementum arcu. Duis dapibus ut quam a hendrerit. Vivamus id justo at nunc finibus tempus vitae vitae neque.</p>
 
             <p>Integer pellentesque lectus nec ligula feugiat elementum. Sed justo tortor, mattis vel arcu quis, placerat pellentesque purus. Phasellus tempus eros in facilisis pellentesque. Suspendisse pellentesque at eros nec efficitur. Donec vitae sapien at lectus placerat semper nec id justo. Vivamus pretium metus a nisi condimentum lacinia. Suspendisse imperdiet tellus facilisis mi dapibus, vitae consequat nulla commodo. Vestibulum cursus odio id urna varius ultrices. Praesent aliquam enim libero. Fusce facilisis lobortis dolor, vitae elementum quam vestibulum et. Sed elementum bibendum nulla imperdiet egestas. Donec faucibus sem orci, sit amet accumsan mauris cursus vitae. Maecenas blandit rutrum magna, elementum rutrum ligula interdum a. Nulla feugiat ut orci ut mattis. Mauris nec eleifend justo, ac eleifend purus.</p>
           </div>
-
           <div id="About" class="tabcontent">
-            <h3>About</h3>
+            <h3>Headline</h3>
             <p>Duis non congue mi. Phasellus at pharetra dolor, ut interdum lacus. Cras at erat sit amet augue mollis pulvinar at et risus. Suspendisse sed urna aliquet, rhoncus ligula eu, aliquam massa. Phasellus varius, neque ac ullamcorper gravida, purus mi blandit magna, ut facilisis massa diam et leo. Proin at metus lacinia, rhoncus ipsum at, blandit quam. Aliquam vitae justo at turpis scelerisque feugiat. Etiam at urna mattis, feugiat metus sagittis, accumsan elit. Phasellus massa orci, luctus vitae lorem ut, efficitur elementum arcu. Duis dapibus ut quam a hendrerit. Vivamus id justo at nunc finibus tempus vitae vitae neque.</p>
 
             <p>Integer pellentesque lectus nec ligula feugiat elementum. Sed justo tortor, mattis vel arcu quis, placerat pellentesque purus. Phasellus tempus eros in facilisis pellentesque. Suspendisse pellentesque at eros nec efficitur. Donec vitae sapien at lectus placerat semper nec id justo. Vivamus pretium metus a nisi condimentum lacinia. Suspendisse imperdiet tellus facilisis mi dapibus, vitae consequat nulla commodo. Vestibulum cursus odio id urna varius ultrices. Praesent aliquam enim libero. Fusce facilisis lobortis dolor, vitae elementum quam vestibulum et. Sed elementum bibendum nulla imperdiet egestas. Donec faucibus sem orci, sit amet accumsan mauris cursus vitae. Maecenas blandit rutrum magna, elementum rutrum ligula interdum a. Nulla feugiat ut orci ut mattis. Mauris nec eleifend justo, ac eleifend purus.</p>
           </div>
     </section>
-    <section class="features container">
+    <a href="#tips">
+           <div class="btn">
+            <p>More</p>
+           </div>
+    </a>
+    <section class="features container" id="features">
       <div>
         <i class="fab fa-css3-alt"></i>
           <p>Nunc tempor posuere, nibh ac nisl. Aenean ac dolor. Pellentesque sed eros. Quisque urna. Nullam sit amet ipsum ut arcu. Sed ornare, orci luctus.</p>  
@@ -103,12 +114,23 @@
       </div>
     </section>
     <section class="tips" id="tips">
-        <div class="daily-tip">
+      <div class="daily-tip">
         <p>Every day new tip for your garden, body and mind</p>
       </div>
+      <div class="tips-btn">
+        <a href="#footer">
+          <div class="btn">
+            <p>More</p>
+          </div>
+        </a>
+      </div>
     </section>
-    <section class="contact">
-        
+    <section class="contact row">
+      <div class="form">
+          
+      </div>
+      <div id="map" class="map">
+      </div>
     </section>
     <footer id="footer" class="footer">
       <div class="base container">
@@ -123,6 +145,8 @@
       </div>    
     </footer>
     <script src="script.js"></script>
+    
+    
   </body>
 </html>
     
