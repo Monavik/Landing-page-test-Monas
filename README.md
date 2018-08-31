@@ -3,11 +3,10 @@ RWD to come
 
 https://monavik.github.io/simple-landing-page/
 
-### Techno:
+### Tech & Tools:
 * HTML5
 * CSS3
-
-### Tools:
+* JavaScript
 * Sass
 
 ### Inspiration: 
