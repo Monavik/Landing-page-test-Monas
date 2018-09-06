@@ -2,11 +2,12 @@
 in progress
 https://monavik.github.io/simple-landing-page/
 
-### Tech & Tools:
+### Tools:
 * HTML5
 * CSS3
 * JavaScript
 * Sass
+* Git
 
 ### Inspiration: 
 
