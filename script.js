@@ -1,8 +1,5 @@
 "use strict";
 
-
-
-
 /* SMOOTH SCROLLING */
 
 $(document).ready(function(){
