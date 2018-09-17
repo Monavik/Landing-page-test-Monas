@@ -5,7 +5,7 @@ https://monavik.github.io/simple-landing-page/
 ### Tools:
 * HTML5
 * CSS3
-* JavaScript
+* jQuery
 * Sass
 * Git
 
