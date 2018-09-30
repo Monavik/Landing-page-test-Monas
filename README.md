@@ -1,14 +1,13 @@
-## Simple landing page (in progress)
-RWD to come
-
+## Simple landing page 
+in progress
 https://monavik.github.io/simple-landing-page/
 
-### Techno:
+### Tools:
 * HTML5
 * CSS3
-
-### Tools:
+* jQuery
 * Sass
+* Git
 
 ### Inspiration: 
 
