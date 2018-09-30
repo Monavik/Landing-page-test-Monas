@@ -14,7 +14,6 @@ body
 $local-red: #da8285  
 
 
-
 /* NAVBAR */
 
 nav 
@@ -25,11 +24,12 @@ nav
   width: 100%
   margin-top: 30px
   position: absolute
-  background: rgba(255, 255, 255, 0.7)
+  background: rgba(255, 255, 255, 0.4)
   
 .logo 
   margin-left: -300px
   font-size: 25px
+  
 
 .navbar ul
   margin-left: 150px
@@ -52,10 +52,10 @@ nav
     
 /* HERO */
 
-header 
+header
   height: 100vh
   position: relative
-  background: url(https://images.unsplash.com/photo-1514092379092-21dfee9d0b93?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0aeb724a6df93ccc8a3d87e02462d9a9&auto=format&fit=crop&w=752&q=80), 
+  background: url(https://images.unsplash.com/photo-1438109382753-8368e7e1e7cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8cc85ea1f3bde44325282044a295d390&auto=format&fit=crop&w=750&q=80), 
   background-size: cover
   background-position: center
   background-attachment: fixed
@@ -72,7 +72,7 @@ header
   transform: translate(-50%, -50%)
   text-align: center
   font-size: 80px
-  background: rgba(255, 255, 255, 0.6)
+  background: rgba(255, 255, 255, 0.2)
   &:hover
     cursor: pointer  
   &:active
@@ -86,69 +86,159 @@ header
   transform: translate(-50%, -50%)
   p
     margin: 0 auto
-    color: #000
+    color: #fff
     
     
     
 /* STORY */
 
 .story 
-  height: 100vh
+  height: 100%
+  width: 100%
   margin: 0 auto
   position: relative
+  
 
 .story-txt 
   margin: 3em auto
-  text-transform: capitalize
+  padding: 3em
   position: absolute
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
+  box-shadow: 0 35px 85px 5px #ccc
   p
     font-family: 'Cinzel', serif
     font-size: 20px
+    text-align: justify
   a
     text-decoration: none
 
 .btn 
   height: 60px
-  width: 150px
+  width: 12em
   margin: 70px auto
   border: 1px solid gray
   border-radius: 22px
   line-height: 1em
   &:hover
     cursor: pointer
-    border: 1px solid $local-red
+    border: 1px solid #6EB2C4
   p
     text-align: center
     color: black
+    
+/* INSPIRATIONS - NORDIC */
    
+.nordic,
+.south
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.container-nordic,
+.container-south
+  height: 80vh
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+ 
+
+.nordic-pic
+  background-image: url(https://images.unsplash.com/photo-1524434870396-0d752e20692f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07995d53e4aae0d67e7351a6ce41eaed&auto=format&fit=crop&w=750&q=80)
+  background-position: center 
+  background-size: cover
+  background-repeat: no-repeat
+  height: 100%
+  width: 100%
+  position: relative
+  display: flex
+  align-items: flex-end
+  text-align: center
+  a
+    text-decoration: none
+    width: 30%
+    margin: 0 auto
+  .next 
+    color: white
+    border: 1px #fff solid
+    border-radius: 50px
+    text-align: center
+    p
+      margin: .3em .2em 0
+      &:hover
+        cursor: pointer  
+  
+
+
+.nordic-rest,
+.south-rest
+  position: absolute
+  width: 70%
+  height: 50%
+  display: flex
+  justify-items: center
+  align-items: center
+  text-align: justify
+  color: #000
+  background: rgba(255, 255, 255, 0.6)
+  h1
+    width: 30%
+    text-align: center
+  p
+    width: 70%
+    padding: 3em
+    
+
+    
+.nordic-pic i
+  border: solid #fff
+  border-width: 0 2px 2px 0
+  padding: 4px
+  display: inline-block
+  
+
+i.arrow
+    margin: 0 .2em .3em
+    transform: rotate(45deg)
+
+  
+
 /* ENGLAND */
 
-.england 
+.england,
+.scent
   height: 100vh
   width: 100%
   display: flex
   align-items: center
 
-.container-eng
+.container-eng,
+.container-scent
   display: flex
   justify-content: center 
+  box-shadow: 0 35px 85px 5px #ccc
  
 .eng-pic
   height: 80vh
   width: 40%
-  background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/CG0HVMG2OF.jpg)
+  background-image: url(https://images.unsplash.com/photo-1537369321153-06ee42bf23c0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9bb7ecabf950cac95b112496b14fb212&auto=format&fit=crop&w=334&q=80)
   background-position: center center
+  background-repeat: no-repeat
   margin: 0 20px
 
-.eng-rest 
+.eng-rest,
+.scent-rest
   width: 40%
   height: 80vh
   margin: 0 20px
   h1
     padding: 30px 0
+  a
+    text-decoration: none
+    color: #000
   
 .eng-rest > p
   margin-top: 5em
@@ -175,54 +265,71 @@ header
 
 i.arrow
     margin: 0 .2em .3em
-
-.arrow
     transform: rotate(45deg)
+
+    
+/*SOUTH*/
+
+.south-pic
+  @extend .nordic-pic
+  background-image: url(https://images.unsplash.com/photo-1468821216911-c12c293b9787?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fdcc45c96cc46bb2012fead30996290e&auto=format&fit=crop&w=750&q=80)
+
+/* WEST */
+
+.scent-pic
+  height: 80vh
+  width: 30%
+  background-image: url(https://images.unsplash.com/photo-1509432987859-a93add19398d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8b7a86e8a7bccb7be001b8eb78ecc810&auto=format&fit=crop&w=751&q=80)
+  background-position: center 
+  background-repeat: no-repeat
+  margin: 0 20px
+
+
+  
+  
+  
+
+
 
 
 /* BREAKER */
 
-.breaker
-  height: 25vh
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://images.unsplash.com/photo-1514092379092-21dfee9d0b93?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0aeb724a6df93ccc8a3d87e02462d9a9&auto=format&fit=crop&w=752&q=80)
-  background-size: cover
-  background-position: center bottom
-  background-attachment: fixed
-  margin: 5em auto
+
 
 
 /* FEATURES */
 
 .features
-  height: 40vh
+  height: 60vh
   width: 100%
   display: flex
-  justify-content: center
-  align-items: center
   margin: 0 auto
   div
-    width: 15%
-    height: 80%
-    margin-top: 0
+    align-items: center
     text-align: center
-    padding: 0 15px
+    padding: 10px 15px
     p
       font-size: 0.8em
       font-weight: bold
-      padding: 0 auto
+      padding: 10px 10px
+      margin: 0
     .fab
-      font-size: 4em
+      font-size: 5em
       color: $local-red
       text-align: center
+      border: 1px #FEA200 solid
+      border-radius: 50px
       
       
+.container-features
+  display: flex
 
 /* TIPS */
 
 .tips
   height: 100vh
   width: 100%
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://images.unsplash.com/photo-1514092379092-21dfee9d0b93?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0aeb724a6df93ccc8a3d87e02462d9a9&auto=format&fit=crop&w=752&q=80)
+  background-image: url(https://images.unsplash.com/photo-1536260454352-a931acd0c989?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=08924ff02c79d02f8a0b1eca79b50e47&auto=format&fit=crop&w=750&q=80)
   background-position: center bottom
   background-size: cover
   background-attachment: fixed
@@ -235,6 +342,9 @@ i.arrow
   p  
     font-size: 40px
     padding: 50px auto
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7))
+    padding: 0.5em 2em
+    
 
 
 /* CONTACT */
@@ -315,24 +425,22 @@ input[type=submit]
 /* FOOTER */
 
 .footer 
-  height: 15vh
+  height: 5vh
   width: 100%
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://images.unsplash.com/photo-1514092379092-21dfee9d0b93?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0aeb724a6df93ccc8a3d87e02462d9a9&auto=format&fit=crop&w=752&q=80)
   background-position: center 
   background-size: cover
   position: relative
-  background-attachment: fixed
 
 .base
   position: absolute
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
-  text-align: center
+  text-align: right
 
   
 .copyright p
   font-size: 1em
-  font-weight: bold
+  
   
   
