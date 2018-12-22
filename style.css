@@ -282,9 +282,7 @@ i.arrow {
     .features div .fab {
       font-size: 5em;
       color: #da8285;
-      text-align: center;
-      border: 1px #FEA200 solid;
-      border-radius: 50px; }
+      text-align: center;}
 
 .container-features {
   display: flex; }
